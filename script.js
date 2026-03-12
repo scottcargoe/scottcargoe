@@ -151,9 +151,9 @@ document.querySelectorAll('.reveal').forEach((el, i) => {
 
   const titles = [
     'Aerospace Engineer',
+    'Mechanical Designer',
+    'CAD/CAM Specialist',
     'Systems Designer',
-    'CFD Specialist',
-    'GNC Developer',
     'Problem Solver',
   ];
 
