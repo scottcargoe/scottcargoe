@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scott Cargoe — Aerospace Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Starfield Canvas -->
+  <canvas id="starfield"></canvas>
+
+  <!-- Scroll Progress Bar -->
+  <div id="progress-bar"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">SC<span class="accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting reveal">Hello, I'm</p>
+      <h1 class="hero-name reveal">
+        Scott<br /><span class="accent">Cargoe</span>
+      </h1>
+      <div class="hero-title-wrapper reveal">
+        <span class="hero-title-text" id="typed-title"></span>
+        <span class="cursor">|</span>
+      </div>
+      <p class="hero-tagline reveal">
+        Pushing the boundaries of flight &amp; space exploration —<br />
+        from aerodynamic modeling to mission-critical systems.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+      <div class="hero-scroll reveal">
+        <span>Scroll to explore</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <div class="hero-orb orb-3"></div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title reveal">About <span class="accent">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-photo-wrapper reveal">
+          <div class="about-photo-glass">
+            <div class="photo-placeholder">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="40" cy="30" r="18" stroke="#00d4ff" stroke-width="2"/>
+                <path d="M8 72c0-17.673 14.327-32 32-32s32 14.327 32 32" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <span>Photo</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <p class="about-bio">
+            Passionate about pushing the boundaries of flight and space exploration,
+            I design, analyze, and build aerospace systems — from aerodynamic modeling
+            and CFD simulations to mission-critical software and control algorithms.
+          </p>
+          <p class="about-bio">
+            With a deep interest in the intersection of engineering and technology, I bring
+            rigorous analytical thinking and a drive for innovation to every project I undertake.
+          </p>
+          <div class="about-stats">
+            <div class="stat-card glass-card">
+              <span class="stat-number accent">5<span class="stat-plus">+</span></span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-card glass-card">
+              <span class="stat-number accent">12<span class="stat-plus">+</span></span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat-card glass-card">
+              <span class="stat-number accent">3</span>
+              <span class="stat-label">Research Papers</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title reveal">Featured <span class="accent">Projects</span></h2>
+      <p class="section-subtitle reveal">A selection of work I'm proud of</p>
+      <div class="projects-grid">
+
+        <article class="project-card glass-card reveal">
+          <div class="project-icon">🚀</div>
+          <h3 class="project-title">Mission Trajectory Optimizer</h3>
+          <p class="project-desc">
+            Developed an optimal trajectory planning tool for interplanetary missions
+            using gradient-descent and genetic algorithms, achieving 18% fuel efficiency
+            improvements over conventional approaches.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">MATLAB</span>
+            <span class="tag">Astrodynamics</span>
+            <span class="tag">Optimization</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">GitHub →</a>
+            <a href="#" class="project-link accent">Case Study →</a>
+          </div>
+        </article>
+
+        <article class="project-card glass-card reveal">
+          <div class="project-icon">🌊</div>
+          <h3 class="project-title">CFD Simulation Dashboard</h3>
+          <p class="project-desc">
+            Built an interactive visualization platform for aerodynamic CFD results,
+            enabling engineers to explore pressure distributions, streamlines, and
+            turbulence data in real time.
+          </p>
+          <div class="project-tags">
+            <span class="tag">OpenFOAM</span>
+            <span class="tag">Python</span>
+            <span class="tag">VTK</span>
+            <span class="tag">CFD</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">GitHub →</a>
+            <a href="#" class="project-link accent">Case Study →</a>
+          </div>
+        </article>
+
+        <article class="project-card glass-card reveal">
+          <div class="project-icon">🤖</div>
+          <h3 class="project-title">Drone Swarm Control System</h3>
+          <p class="project-desc">
+            Designed a distributed control architecture for coordinating autonomous
+            UAV swarms, with collision avoidance, formation flying, and real-time
+            adaptive path planning algorithms.
+          </p>
+          <div class="project-tags">
+            <span class="tag">C++</span>
+            <span class="tag">Simulink</span>
+            <span class="tag">ROS</span>
+            <span class="tag">Control Theory</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">GitHub →</a>
+            <a href="#" class="project-link accent">Case Study →</a>
+          </div>
+        </article>
+
+        <article class="project-card glass-card reveal">
+          <div class="project-icon">🛰️</div>
+          <h3 class="project-title">Satellite Attitude Control</h3>
+          <p class="project-desc">
+            Implemented a model predictive control (MPC) system for satellite attitude
+            determination and control, with hardware-in-the-loop simulation and
+            fault-tolerant operation under sensor noise.
+          </p>
+          <div class="project-tags">
+            <span class="tag">MATLAB</span>
+            <span class="tag">Simulink</span>
+            <span class="tag">MPC</span>
+            <span class="tag">GNC</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">GitHub →</a>
+            <a href="#" class="project-link accent">Case Study →</a>
+          </div>
+        </article>
+
+        <article class="project-card glass-card reveal">
+          <div class="project-icon">✈️</div>
+          <h3 class="project-title">Wing Structural Analysis Tool</h3>
+          <p class="project-desc">
+            Created an FEA-based structural analysis tool for composite wing design,
+            integrating aerodynamic loads from CFD outputs with material failure
+            criteria for rapid design iteration.
+          </p>
+          <div class="project-tags">
+            <span class="tag">ANSYS</span>
+            <span class="tag">Python</span>
+            <span class="tag">FEA</span>
+            <span class="tag">Composites</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">GitHub →</a>
+            <a href="#" class="project-link accent">Case Study →</a>
+          </div>
+        </article>
+
+        <article class="project-card glass-card reveal">
+          <div class="project-icon">🔭</div>
+          <h3 class="project-title">Launch Vehicle Performance Model</h3>
+          <p class="project-desc">
+            Developed a multi-stage rocket performance simulation incorporating
+            propulsion, aerodynamics, and trajectory integration for early-stage
+            conceptual design trade studies.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">Propulsion</span>
+            <span class="tag">Trajectory</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">GitHub →</a>
+            <a href="#" class="project-link accent">Case Study →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title reveal">Skills &amp; <span class="accent">Expertise</span></h2>
+      <p class="section-subtitle reveal">Tools and technologies I work with</p>
+      <div class="skills-grid">
+
+        <div class="skill-group glass-card reveal">
+          <h3 class="skill-group-title"><span class="skill-icon">🛩️</span> Aerospace Engineering</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Aerodynamics</span>
+            <span class="skill-tag">CFD (ANSYS / OpenFOAM)</span>
+            <span class="skill-tag">Structural Analysis (FEA)</span>
+            <span class="skill-tag">Astrodynamics</span>
+            <span class="skill-tag">GNC Systems</span>
+            <span class="skill-tag">Propulsion</span>
+            <span class="skill-tag">Flight Mechanics</span>
+            <span class="skill-tag">Systems Engineering</span>
+          </div>
+        </div>
+
+        <div class="skill-group glass-card reveal">
+          <h3 class="skill-group-title"><span class="skill-icon">💻</span> Software & Programming</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">MATLAB / Simulink</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">ROS</span>
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">LaTeX</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">NumPy / SciPy</span>
+          </div>
+        </div>
+
+        <div class="skill-group glass-card reveal">
+          <h3 class="skill-group-title"><span class="skill-icon">🔧</span> Design & CAD</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">SolidWorks</span>
+            <span class="skill-tag">CATIA</span>
+            <span class="skill-tag">AutoCAD</span>
+            <span class="skill-tag">Rapid Prototyping</span>
+            <span class="skill-tag">Composite Manufacturing</span>
+            <span class="skill-tag">3D Printing</span>
+          </div>
+        </div>
+
+        <div class="skill-group glass-card reveal">
+          <h3 class="skill-group-title"><span class="skill-icon">📊</span> Analysis & Research</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Optimization Algorithms</span>
+            <span class="skill-tag">Control Theory</span>
+            <span class="skill-tag">Data Analysis</span>
+            <span class="skill-tag">Technical Writing</span>
+            <span class="skill-tag">Risk Assessment</span>
+            <span class="skill-tag">Failure Mode Analysis</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title reveal">Work <span class="accent">Experience</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-meta">
+              <span class="timeline-date">2023 — Present</span>
+              <span class="timeline-badge">Current</span>
+            </div>
+            <h3 class="timeline-role">Aerospace Systems Engineer</h3>
+            <p class="timeline-company">Company Name · Full-time</p>
+            <p class="timeline-desc">
+              Leading aerodynamic analysis and CFD simulation workflows for next-generation
+              aircraft configurations. Collaborating cross-functionally with structural and
+              propulsion teams to drive integrated system design decisions.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">CFD</span>
+              <span class="tag">MATLAB</span>
+              <span class="tag">Python</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-meta">
+              <span class="timeline-date">2021 — 2023</span>
+            </div>
+            <h3 class="timeline-role">GNC Engineer</h3>
+            <p class="timeline-company">Company Name · Full-time</p>
+            <p class="timeline-desc">
+              Developed and validated guidance, navigation, and control algorithms for
+              autonomous UAV platforms. Implemented hardware-in-the-loop test environments
+              and led flight test campaigns.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Simulink</span>
+              <span class="tag">C++</span>
+              <span class="tag">ROS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-meta">
+              <span class="timeline-date">2020 — 2021</span>
+            </div>
+            <h3 class="timeline-role">Aerospace Engineering Intern</h3>
+            <p class="timeline-company">Company Name · Internship</p>
+            <p class="timeline-desc">
+              Supported structural analysis for satellite components using FEA tools.
+              Contributed to thermal modeling and wrote test documentation in compliance
+              with aerospace quality standards.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">ANSYS</span>
+              <span class="tag">SolidWorks</span>
+              <span class="tag">LaTeX</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title reveal">Get In <span class="accent">Touch</span></h2>
+      <p class="section-subtitle reveal">Have a project or opportunity in mind? Let's connect.</p>
+      <div class="contact-grid">
+
+        <div class="contact-form-wrapper reveal">
+          <form class="glass-card contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <p class="form-status" id="form-status"></p>
+          </form>
+        </div>
+
+        <div class="contact-info reveal">
+          <div class="glass-card contact-card">
+            <h3>Let's Connect</h3>
+            <p>Open to full-time roles, collaborations, and consulting opportunities in aerospace and adjacent fields.</p>
+            <div class="social-links">
+              <a href="https://linkedin.com/in/scott-cargoe" target="_blank" rel="noopener" class="social-link">
+                <span class="social-icon">in</span>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://github.com/" target="_blank" rel="noopener" class="social-link">
+                <span class="social-icon">⌥</span>
+                <span>GitHub</span>
+              </a>
+              <a href="mailto:hello@scottcargoe.com" class="social-link">
+                <span class="social-icon">@</span>
+                <span>Email</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>Designed &amp; built by <span class="accent">Scott Cargoe</span> · 2024</p>
+    <p class="footer-sub">Made with ♥ and a lot of caffeine</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
